@@ -1,0 +1,52 @@
+= Sidekick
+
+A simple proof of concept Contact Photo import for you address book that gets
+all your Facebook contact's photos (who are in your address book) and updates
+them.
+
+The code is a mess and to get around macgems not working there are some really ugly hacks, but it works and does what it advertises.
+
+== Install
+
+First make sure you have XCode dev tools installed.
+
+You'll need to have MacRuby installed to compile it, you can grab that via:
+
+  MR=http://svn.macosforge.org/repository/ruby/MacRuby
+  svn co $MR/tags/0.3 MacRuby-0.3
+  cd MacRuby-0.3
+  rake
+  sudo rake install
+  
+More info about installing MacRuby can be found here:
+
+http://www.macruby.org/trac/wiki/InstallingMacRuby
+
+You'll also need to install a couple gems (some via github gems):
+
+  gem sources -a http://gems.github.com
+  sudo gem install nokogiri tenderlove-mechanize
+  
+== Building
+
+Once you have everything installed Open the XCode project file and hit build.
+
+== Usage
+
+Once running enter your facebook username (you email address) and passowrd.
+Click get contacts and wait (this may take a minute or two, maybe longer if
+you have lots of contacts). It should populate with all the contacts it's
+found in both list and let you go through your photos.
+
+The button on the bottom right will confirm your photo selection. The buttons
+on the left operate as advertised.
+
+If you have MobileMe setup, after updating your photos they should just show 
+up on your phone (this is really why I built it ;) ).
+
+== Warning
+
+This is a prototype to see if I could scrape the Facebook profiles, it's
+functional, but may break everything. If it eats all your contacts, or screws
+anything up that's just how it goes, don't blame me. You may want to keep a
+backup of all that stuff.

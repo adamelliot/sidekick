@@ -1,0 +1,110 @@
+#!/usr/bin/env ruby -wKU
+
+require 'rubygems'
+require 'nokogiri'
+require 'mechanize'
+require 'optparse'
+
+module Faceport
+  LOGIN_URL = 'http://facebook.com/login.php'
+  FRIENDS_URL = 'http://m.facebook.com/friends.php?a='
+  PROFILE_PICS_URL = 'http://m.facebook.com/album.php?profile=&id='
+
+  WWW::Mechanize.html_parser = Nokogiri::HTML
+
+  class FacebookMech
+    attr_reader :contacts, :username, :password
+
+    def initialize(username, password)
+      @agent = WWW::Mechanize.new
+      @agent.user_agent_alias = 'Windows IE 7'
+
+      @contacts = {}
+
+      @username = username
+      @password = password
+      
+      login
+    end
+
+    def login
+      f = @agent.get(LOGIN_URL).forms.first
+      f.email = @username
+      f.pass = @password
+      f.submit
+    end
+
+    def process
+      get_contacts
+    end
+
+    def get_photos_for(ids)
+      contacts = []
+
+      ids.each do |id|
+        id.chomp!
+        
+        @agent.transact do
+          p = @agent.get("#{PROFILE_PICS_URL}#{id}")
+          full_name = p.parser.css("div[id=title] b").first.text[/(.*)\'s Photos/, 1].split ' '
+          first_name = full_name.first
+          last_name = (full_name.length > 1) && full_name.pop || ""
+          p = p.links_with(:href => /photo\.php\?/).first.click
+          url = p.parser.css("a[href*='photo'] img").first.attributes['src'].to_s
+          contacts << {:first_name => first_name, :last_name => last_name, :facebook_id => id, :image_url => url}
+        end
+      end
+      contacts
+    end
+
+    def get_all_contacts
+      contacts = []
+
+      friend_page = @agent.get(FRIENDS_URL)
+
+      begin
+        friend_page.links_with(:href => /profile\.php\?/, :text => /[^(^Profile$)]/).each do |link|
+          @agent.transact do
+            full_name = link.text.split ' '
+            first_name = full_name.first
+            last_name = (full_name.length > 1) && full_name.pop || ""
+
+            id = link.href[/id=(\d*)/,1]
+
+#            STDERR.puts "#{contacts.length + 1})\t#{link.text} - #{id}"
+
+            contacts << {:first_name => first_name, :last_name => last_name, :facebook_id => id}
+          end
+        end
+
+        f = friend_page.links_with(:href => /friends\.php\?/, :text => "Next")
+        friend_page = ((f.length > 0) && f.first.click) || nil
+      end while friend_page
+      contacts
+    end
+  end
+  
+  def self.run
+    app = {}
+    OptionParser.new do |opts|
+      opts.banner = "Usage: faceport [-p]"
+      # Causes photo ids to be in the results
+      opts.on("-p", "Specify facebook user ids") {|v| app[:photos] = true}
+    end.parse! ARGV
+
+    username = ARGV[0]
+    password = ARGV[1]
+
+    fp = Faceport::FacebookMech.new(username, password)
+    if app[:photos]
+      ids = STDIN.readlines if app[:photos]
+      output = fp.get_photos_for(ids)
+    else
+      output = fp.get_all_contacts
+    end
+    p output
+#    puts Marshal.dump(output)
+  end
+end
+
+Faceport.run

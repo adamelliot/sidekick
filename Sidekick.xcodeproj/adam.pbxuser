@@ -1,0 +1,251 @@
+// !$*UTF8*$!
+{
+	089C165DFE840E0CC02AAC07 /* English */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 215}}";
+			sepNavSelRange = "{86, 0}";
+			sepNavVisRange = "{0, 94}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 66EAF4130F516D2C002745EE /* Sidekick */;
+		activeTarget = 8D1107260486CEB800E47090 /* Sidekick */;
+		addToTargets = (
+			8D1107260486CEB800E47090 /* Sidekick */,
+		);
+		codeSenseManager = 66EAF41A0F516D36002745EE /* Code sense */;
+		executables = (
+			66EAF4130F516D2C002745EE /* Sidekick */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					310,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 257224365;
+			PBXWorkspaceStateSaveDate = 257224365;
+		};
+		perUserProjectItems = {
+			663091A90F52046300DFCDD5 = 663091A90F52046300DFCDD5 /* PlistBookmark */;
+			663091AA0F52046300DFCDD5 = 663091AA0F52046300DFCDD5 /* PBXTextBookmark */;
+			663091AC0F52046300DFCDD5 = 663091AC0F52046300DFCDD5 /* PBXTextBookmark */;
+			663091BC0F5207D400DFCDD5 = 663091BC0F5207D400DFCDD5 /* PBXTextBookmark */;
+			663091EC0F521B1200DFCDD5 = 663091EC0F521B1200DFCDD5 /* PBXTextBookmark */;
+			664E9A300F530C230007F422 = 664E9A300F530C230007F422 /* PBXTextBookmark */;
+			6676E3610F54EEAF00EE25D0 /* PBXTextBookmark */ = 6676E3610F54EEAF00EE25D0 /* PBXTextBookmark */;
+			6676E3750F55345E00EE25D0 /* PBXTextBookmark */ = 6676E3750F55345E00EE25D0 /* PBXTextBookmark */;
+			66EAF4DB0F518D55002745EE = 66EAF4DB0F518D55002745EE /* PBXTextBookmark */;
+			66EAF4DD0F518D55002745EE = 66EAF4DD0F518D55002745EE /* PBXTextBookmark */;
+			66EAF4DE0F518D55002745EE = 66EAF4DE0F518D55002745EE /* PlistBookmark */;
+			66EAF4DF0F518D55002745EE = 66EAF4DF0F518D55002745EE /* PBXTextBookmark */;
+		};
+		sourceControlManager = 66EAF4190F516D36002745EE /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	663091A90F52046300DFCDD5 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/adam/Code/MacRuby/Sidekick/Info.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	663091AA0F52046300DFCDD5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 66EAF50F0F519FBE002745EE /* faceport.dump */;
+		name = "faceport.dump: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 5295;
+		vrLoc = 0;
+	};
+	663091AC0F52046300DFCDD5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 66EAF50F0F519FBE002745EE /* faceport.dump */;
+		name = "faceport.dump: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 5295;
+		vrLoc = 0;
+	};
+	663091BC0F5207D400DFCDD5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 66EAF42B0F517A03002745EE /* ContactViewerController.rb */;
+		name = "ContactViewerController.rb: 61";
+		rLen = 0;
+		rLoc = 1180;
+		rType = 0;
+		vrLen = 783;
+		vrLoc = 0;
+	};
+	663091EC0F521B1200DFCDD5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 66EAF4EF0F518ED1002745EE /* faceport */;
+		name = "faceport: 84";
+		rLen = 0;
+		rLoc = 2078;
+		rType = 0;
+		vrLen = 734;
+		vrLoc = 0;
+	};
+	664E9A300F530C230007F422 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 66EAF4EF0F518ED1002745EE /* faceport */;
+		name = "faceport: 84";
+		rLen = 0;
+		rLoc = 2078;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	6676E3610F54EEAF00EE25D0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 66EAF4EF0F518ED1002745EE /* faceport */;
+		name = "faceport: 84";
+		rLen = 0;
+		rLoc = 2078;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	6676E3750F55345E00EE25D0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 66EAF4EF0F518ED1002745EE /* faceport */;
+		name = "faceport: 117";
+		rLen = 0;
+		rLoc = 3034;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	66EAF4130F516D2C002745EE /* Sidekick */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Sidekick;
+		savedGlobals = {
+		};
+		sourceDirectories = (
+		);
+	};
+	66EAF4190F516D36002745EE /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+	};
+	66EAF41A0F516D36002745EE /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	66EAF42B0F517A03002745EE /* ContactViewerController.rb */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {512, 784}}";
+			sepNavSelRange = "{1180, 0}";
+			sepNavVisRange = "{0, 783}";
+		};
+	};
+	66EAF4DB0F518D55002745EE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 089C165DFE840E0CC02AAC07 /* English */;
+		name = "InfoPlist.strings: 3";
+		rLen = 0;
+		rLoc = 86;
+		rType = 0;
+		vrLen = 94;
+		vrLoc = 0;
+	};
+	66EAF4DD0F518D55002745EE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 66EAF42B0F517A03002745EE /* ContactViewerController.rb */;
+		name = "ContactViewerController.rb: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 232;
+		vrLoc = 0;
+	};
+	66EAF4DE0F518D55002745EE /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/adam/Code/MacRuby/Sidekick/Info.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	66EAF4DF0F518D55002745EE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 089C165DFE840E0CC02AAC07 /* English */;
+		name = "InfoPlist.strings: 3";
+		rLen = 0;
+		rLoc = 86;
+		rType = 0;
+		vrLen = 94;
+		vrLoc = 0;
+	};
+	66EAF4EF0F518ED1002745EE /* faceport */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {488, 1470}}";
+			sepNavSelRange = "{2618, 0}";
+			sepNavVisRange = "{0, 0}";
+		};
+	};
+	66EAF50F0F519FBE002745EE /* faceport.dump */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {4290, 2296}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 5295}";
+		};
+	};
+	8D1107260486CEB800E47090 /* Sidekick */ = {
+		activeExec = 0;
+		executables = (
+			66EAF4130F516D2C002745EE /* Sidekick */,
+		);
+	};
+}
