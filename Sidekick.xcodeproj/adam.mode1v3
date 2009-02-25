@@ -326,7 +326,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>6676E3920F55473B00EE25D0</string>
+										<string>6676E3940F55487B00EE25D0</string>
 										<key>history</key>
 										<array>
 											<string>66EAF4DB0F518D55002745EE</string>
@@ -540,8 +540,8 @@
 		<string>6676E37F0F55345E00EE25D0</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>66EAF4E10F518D55002745EE</string>
-		<string>/Users/adam/Code/MacRuby/Sidekick/Sidekick.xcodeproj</string>
 		<string>1C78EAAD065D492600B07095</string>
+		<string>/Users/adam/Code/MacRuby/Sidekick/Sidekick.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>-809 722 777 416 -1920 0 1920 1200 </string>

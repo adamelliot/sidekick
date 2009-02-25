@@ -8,7 +8,7 @@
 		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
-		activeBuildConfigurationName = Debug;
+		activeBuildConfigurationName = Release;
 		activeExecutable = 66EAF4130F516D2C002745EE /* Sidekick */;
 		activeTarget = 8D1107260486CEB800E47090 /* Sidekick */;
 		addToTargets = (
@@ -57,6 +57,7 @@
 			6676E3890F55450000EE25D0 /* PBXTextBookmark */ = 6676E3890F55450000EE25D0 /* PBXTextBookmark */;
 			6676E3900F5546DA00EE25D0 /* PBXTextBookmark */ = 6676E3900F5546DA00EE25D0 /* PBXTextBookmark */;
 			6676E3920F55473B00EE25D0 /* PBXTextBookmark */ = 6676E3920F55473B00EE25D0 /* PBXTextBookmark */;
+			6676E3940F55487B00EE25D0 /* PBXTextBookmark */ = 6676E3940F55487B00EE25D0 /* PBXTextBookmark */;
 			66EAF4DB0F518D55002745EE = 66EAF4DB0F518D55002745EE /* PBXTextBookmark */;
 			66EAF4DD0F518D55002745EE = 66EAF4DD0F518D55002745EE /* PBXTextBookmark */;
 			66EAF4DE0F518D55002745EE = 66EAF4DE0F518D55002745EE /* PlistBookmark */;
@@ -187,6 +188,16 @@
 		vrLen = 0;
 		vrLoc = 0;
 	};
+	6676E3940F55487B00EE25D0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 66EAF4EF0F518ED1002745EE /* faceport */;
+		name = "faceport: 120";
+		rLen = 0;
+		rLoc = 3105;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
 	66EAF4130F516D2C002745EE /* Sidekick */ = {
 		isa = PBXExecutable;
 		activeArgIndices = (
@@ -274,8 +285,8 @@
 	};
 	66EAF4EF0F518ED1002745EE /* faceport */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {488, 1736}}";
-			sepNavSelRange = "{3084, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {488, 1750}}";
+			sepNavSelRange = "{3105, 0}";
 			sepNavVisRange = "{0, 0}";
 		};
 	};

@@ -8,6 +8,15 @@ The code is a mess and to get around macgems not working there are some really u
 
 == Install
 
+To run without MacRuby you should be able to just install the required gems:
+
+  gem sources -a http://gems.github.com
+  sudo gem install nokogiri tenderlove-mechanize
+
+And download Sidekick.zip
+
+== Building
+
 First make sure you have XCode dev tools installed.
 
 You'll need to have MacRuby installed to compile it, you can grab that via:
@@ -27,8 +36,6 @@ You'll also need to install a couple gems (some via github gems):
   gem sources -a http://gems.github.com
   sudo gem install nokogiri tenderlove-mechanize
   
-== Building
-
 Once you have everything installed Open the XCode project file and hit build.
 
 == Usage
