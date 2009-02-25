@@ -17,12 +17,12 @@ class ContactViewerController
     @contactPopUp.removeAllItems
 
     loadABContacts
-    loadFBContacts
   end
   
   # Actions
 
   def getContacts(sender)
+    @getPhotoContacts = true
     loadFBContacts
   end
 
@@ -103,11 +103,16 @@ class ContactViewerController
     @fbContacts = {}
     path = NSBundle.mainBundle.resourcePath.fileSystemRepresentation
 
-    opts = (ids.nil? && "") || " -p "
-    IO.popen("ruby #{File.join(path, "faceport #{opts}#{username.stringValue} #{password.stringValue}")}") do |f|
-      if ids.nil?
 #    f = File.new(File.join(path, 'faceport.dump'), 'r')
 #    begin
+
+    opts = (ids.nil? && "") || " -p "
+    IO.popen("ruby #{File.join(path, "faceport #{opts}#{username.stringValue} #{password.stringValue}")}", "r+") do |f|
+      unless ids.nil?
+        ids.each {|id| f.puts id }
+        f.close_write
+      end
+
       contacts = Marshal.load f.readlines(nil)[0]
 
       contacts.sort! do |x, y|
@@ -128,9 +133,14 @@ class ContactViewerController
   # both datasets.
   def facebookContactsLoaded
     @fbContacts.delete_if { |key, vakue| @abContacts[key].nil? }
-
-    IO.popen("ruby #{File.join(path, "faceport #{username.stringValue} #{password.stringValue}")}") do |f|
-      contacts = Marshal.load f.readlines(nil)[0]
+    
+    if @getPhotoContacts
+      @getPhotoContacts = false
+      ids = []
+      @fbContacts.each { |key, value| ids << value.facebookID }
+      loadFBContacts(ids)
+      return
+    end
 
     @contacts = @fbContacts.keys.sort
     @contacts.each { |key| @contactPopUp.addItemWithTitle key }
@@ -170,6 +180,10 @@ class Contact
 
   def abContact
     @abContact
+  end
+
+  def facebookID
+    @props[:facebook_id]
   end
 
   def displayName

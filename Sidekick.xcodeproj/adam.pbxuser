@@ -53,6 +53,10 @@
 			664E9A300F530C230007F422 = 664E9A300F530C230007F422 /* PBXTextBookmark */;
 			6676E3610F54EEAF00EE25D0 /* PBXTextBookmark */ = 6676E3610F54EEAF00EE25D0 /* PBXTextBookmark */;
 			6676E3750F55345E00EE25D0 /* PBXTextBookmark */ = 6676E3750F55345E00EE25D0 /* PBXTextBookmark */;
+			6676E3830F55446500EE25D0 /* PBXTextBookmark */ = 6676E3830F55446500EE25D0 /* PBXTextBookmark */;
+			6676E3890F55450000EE25D0 /* PBXTextBookmark */ = 6676E3890F55450000EE25D0 /* PBXTextBookmark */;
+			6676E3900F5546DA00EE25D0 /* PBXTextBookmark */ = 6676E3900F5546DA00EE25D0 /* PBXTextBookmark */;
+			6676E3920F55473B00EE25D0 /* PBXTextBookmark */ = 6676E3920F55473B00EE25D0 /* PBXTextBookmark */;
 			66EAF4DB0F518D55002745EE = 66EAF4DB0F518D55002745EE /* PBXTextBookmark */;
 			66EAF4DD0F518D55002745EE = 66EAF4DD0F518D55002745EE /* PBXTextBookmark */;
 			66EAF4DE0F518D55002745EE = 66EAF4DE0F518D55002745EE /* PlistBookmark */;
@@ -139,6 +143,46 @@
 		name = "faceport: 117";
 		rLen = 0;
 		rLoc = 3034;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	6676E3830F55446500EE25D0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 66EAF4EF0F518ED1002745EE /* faceport */;
+		name = "faceport: 110";
+		rLen = 0;
+		rLoc = 2895;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	6676E3890F55450000EE25D0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 66EAF4EF0F518ED1002745EE /* faceport */;
+		name = "faceport: 112";
+		rLen = 0;
+		rLoc = 2945;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	6676E3900F5546DA00EE25D0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 66EAF4EF0F518ED1002745EE /* faceport */;
+		name = "faceport: 117";
+		rLen = 0;
+		rLoc = 3033;
+		rType = 0;
+		vrLen = 0;
+		vrLoc = 0;
+	};
+	6676E3920F55473B00EE25D0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 66EAF4EF0F518ED1002745EE /* faceport */;
+		name = "faceport: 120";
+		rLen = 0;
+		rLoc = 3084;
 		rType = 0;
 		vrLen = 0;
 		vrLoc = 0;
@@ -230,12 +274,18 @@
 	};
 	66EAF4EF0F518ED1002745EE /* faceport */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {488, 1470}}";
-			sepNavSelRange = "{2618, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {488, 1736}}";
+			sepNavSelRange = "{3084, 0}";
 			sepNavVisRange = "{0, 0}";
 		};
 	};
 	66EAF50F0F519FBE002745EE /* faceport.dump */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = text;
+		name = faceport.dump;
+		path = /Users/adam/Code/MacRuby/Sidekick/faceport.dump;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {4290, 2296}}";
 			sepNavSelRange = "{0, 0}";

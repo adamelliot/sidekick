@@ -33,10 +33,17 @@ Once you have everything installed Open the XCode project file and hit build.
 
 == Usage
 
+<b>The application will appear to hang when loading contacts or updating all 
+your photos. It has not crashed, it just doesn't provide visual feedback.</b>
+
+<i>Well it may have crashed, but be patient it might be slow...</i>
+
 Once running enter your facebook username (you email address) and passowrd.
 Click get contacts and wait (this may take a minute or two, maybe longer if
 you have lots of contacts). It should populate with all the contacts it's
 found in both list and let you go through your photos.
+
+200 contacts = about 1 minute
 
 The button on the bottom right will confirm your photo selection. The buttons
 on the left operate as advertised.

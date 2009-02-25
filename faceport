@@ -45,8 +45,16 @@ module Faceport
         id.chomp!
         
         @agent.transact do
-          p = @agent.get("#{PROFILE_PICS_URL}#{id}")
-          full_name = p.parser.css("div[id=title] b").first.text[/(.*)\'s Photos/, 1].split ' '
+          begin
+            p = @agent.get("#{PROFILE_PICS_URL}#{id}")
+          rescue
+            next if p.nil?
+          end
+          node = p.parser.css("div[id=title] b")
+
+          STDERR.puts "#{id} - #{node.text[/(.*)\'s Photos/, 1]}"
+
+          full_name = node.text[/(.*)\'s Photos/, 1].split ' '
           first_name = full_name.first
           last_name = (full_name.length > 1) && full_name.pop || ""
           p = p.links_with(:href => /photo\.php\?/).first.click
@@ -94,6 +102,8 @@ module Faceport
 
     username = ARGV[0]
     password = ARGV[1]
+    
+    return if username.nil? || password.nil?
 
     fp = Faceport::FacebookMech.new(username, password)
     if app[:photos]
@@ -102,8 +112,8 @@ module Faceport
     else
       output = fp.get_all_contacts
     end
-    p output
-#    puts Marshal.dump(output)
+#    p output
+    puts Marshal.dump(output)
   end
 end
 

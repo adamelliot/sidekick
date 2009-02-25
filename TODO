@@ -1,1 +1,3 @@
 - Make the photos properly size so they don't show up distorted on iPhone contact pages.
+- Add visual feedback when running long jobs
+- Add a binary that doesn't require MacRuby to be installed
