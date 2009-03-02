@@ -8,7 +8,16 @@ The code is a mess and to get around macgems not working there are some really u
 
 == Install
 
-To run without MacRuby you should be able to just install the required gems:
+You won't actually be able to use Sidekick without MacRuby installed. You can
+get it at:
+
+http://www.macruby.org/trac/wiki/InstallingMacRuby
+
+You will also need the Apple Developer Tools, to get up and running. Currently
+all MacRuby apps are not bundled with the required frameworks (it is still
+very young).
+
+You will also need these gems.
 
   gem sources -a http://gems.github.com
   sudo gem install nokogiri tenderlove-mechanize
